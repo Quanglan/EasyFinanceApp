@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TranRptViewController" customModule="EasyFinance" customModuleProvider="target">
+            <connections>
+                <outlet property="dateBarView" destination="WBP-a2-hwq" id="Kad-Hj-4K7"/>
+                <outlet property="dateLB" destination="e0K-Sj-Qb8" id="y6h-ip-fEt"/>
+                <outlet property="tableView" destination="C9C-kV-dMX" id="gCU-rT-g3v"/>
+                <outlet property="typeLB" destination="uWQ-p2-b0y" id="Y0b-09-G3q"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewCalendarButton" destination="FAg-X9-vnG" id="Ee4-hn-XE4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WBP-a2-hwq">
+                    <rect key="frame" x="10" y="49" width="210" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NoO-g6-CQz">
+                            <rect key="frame" x="170" y="0.0" width="40" height="40"/>
+                            <color key="backgroundColor" systemColor="systemGray5Color"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="tUc-zS-4fe"/>
+                            </constraints>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="chevron.right" catalog="system"/>
+                            <connections>
+                                <action selector="tapNextMonth:" destination="-1" eventType="touchUpInside" id="FP2-3g-CVh"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0K-Sj-Qb8">
+                            <rect key="frame" x="45" y="11.5" width="120" height="17.5"/>
+                            <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sY2-RG-sbP">
+                            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                            <color key="backgroundColor" systemColor="systemGray5Color"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="6L0-cX-uSl"/>
+                            </constraints>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="chevron.left" catalog="system"/>
+                            <connections>
+                                <action selector="tapPreviousMonth:" destination="-1" eventType="touchUpInside" id="qHh-f9-qJV"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemGray6Color"/>
+                    <constraints>
+                        <constraint firstItem="sY2-RG-sbP" firstAttribute="top" secondItem="WBP-a2-hwq" secondAttribute="top" id="4IZ-hQ-KcY"/>
+                        <constraint firstAttribute="bottom" secondItem="NoO-g6-CQz" secondAttribute="bottom" id="5k4-Hh-9YZ"/>
+                        <constraint firstAttribute="height" constant="40" id="DeX-Ri-G5p"/>
+                        <constraint firstItem="NoO-g6-CQz" firstAttribute="leading" secondItem="e0K-Sj-Qb8" secondAttribute="trailing" constant="5" id="UQS-BJ-q6z"/>
+                        <constraint firstAttribute="trailing" secondItem="NoO-g6-CQz" secondAttribute="trailing" id="YE2-R5-qEa"/>
+                        <constraint firstAttribute="bottom" secondItem="sY2-RG-sbP" secondAttribute="bottom" id="b01-u8-Flt"/>
+                        <constraint firstItem="NoO-g6-CQz" firstAttribute="top" secondItem="WBP-a2-hwq" secondAttribute="top" id="eZe-E9-Ge6"/>
+                        <constraint firstItem="e0K-Sj-Qb8" firstAttribute="centerY" secondItem="WBP-a2-hwq" secondAttribute="centerY" id="epT-cy-enJ"/>
+                        <constraint firstItem="e0K-Sj-Qb8" firstAttribute="leading" secondItem="sY2-RG-sbP" secondAttribute="trailing" constant="5" id="xjB-0Z-C0z"/>
+                        <constraint firstItem="sY2-RG-sbP" firstAttribute="leading" secondItem="WBP-a2-hwq" secondAttribute="leading" id="zNv-dO-mkq"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FAg-X9-vnG">
+                    <rect key="frame" x="230" y="49" width="40" height="40"/>
+                    <color key="backgroundColor" systemColor="systemGray5Color"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="AFf-AS-8qb"/>
+                        <constraint firstAttribute="width" constant="40" id="hm5-yb-u8V"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <color key="tintColor" systemColor="tintColor"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="calendarSearch">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="tapViewCalendarButton:" destination="-1" eventType="touchUpInside" id="x2R-Nx-VOl"/>
+                    </connections>
+                </button>
+                <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chi tiền" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWQ-p2-b0y">
+                    <rect key="frame" x="280" y="49" width="124" height="40"/>
+                    <color key="backgroundColor" systemColor="systemGray6Color"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="DNp-VK-K4I"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="18"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="C9C-kV-dMX">
+                    <rect key="frame" x="0.0" y="89" width="414" height="807"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="uWQ-p2-b0y" firstAttribute="leading" secondItem="FAg-X9-vnG" secondAttribute="trailing" constant="10" id="6EE-4a-Cwj"/>
+                <constraint firstItem="WBP-a2-hwq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="9u8-77-zJd"/>
+                <constraint firstItem="C9C-kV-dMX" firstAttribute="top" secondItem="WBP-a2-hwq" secondAttribute="bottom" id="KeY-2W-UPX"/>
+                <constraint firstItem="uWQ-p2-b0y" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="5" id="bcm-Ic-tBO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uWQ-p2-b0y" secondAttribute="trailing" constant="10" id="cPC-uZ-4fr"/>
+                <constraint firstItem="C9C-kV-dMX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="dZ3-7V-tXg"/>
+                <constraint firstAttribute="bottom" secondItem="C9C-kV-dMX" secondAttribute="bottom" id="fdd-Ut-90i"/>
+                <constraint firstItem="C9C-kV-dMX" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="iCt-sT-JIT"/>
+                <constraint firstItem="uWQ-p2-b0y" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.3" id="mFo-l3-dLw"/>
+                <constraint firstItem="FAg-X9-vnG" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="5" id="mew-bT-gTf"/>
+                <constraint firstItem="FAg-X9-vnG" firstAttribute="leading" secondItem="WBP-a2-hwq" secondAttribute="trailing" constant="10" id="pIt-O6-VrM"/>
+                <constraint firstItem="WBP-a2-hwq" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="5" id="zd5-vA-RxQ"/>
+            </constraints>
+            <point key="canvasLocation" x="128.98550724637681" y="45.535714285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="calendarSearch" width="352" height="372"/>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
+        <image name="chevron.right" catalog="system" width="96" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

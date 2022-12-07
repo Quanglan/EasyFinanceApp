@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TransactionTableViewCell" rowHeight="73" id="KGk-i7-Jjw" customClass="TransactionTableViewCell" customModule="EasyFinance" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="366" height="73"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="366" height="73"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PJk-0A-jPE">
+                        <rect key="frame" x="4" y="4" width="358" height="66"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15 - 11 - 2022" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJB-r0-9GJ">
+                                <rect key="frame" x="235.5" y="0.0" width="112.5" height="28.5"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GXE-Th-z29">
+                                <rect key="frame" x="10" y="11" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0eu-Sg-CXt"/>
+                                    <constraint firstAttribute="width" constant="50" id="rUi-Es-moi"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="subItem" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZuY-Uz-8jj">
+                                <rect key="frame" x="70" y="25.5" width="65" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="note" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdN-W4-aBh">
+                                <rect key="frame" x="70" y="48" width="27" height="15"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="amount" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2dy-Is-S25">
+                                <rect key="frame" x="296" y="44.5" width="52" height="19.5"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wallet" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BM6-kn-VdB">
+                                <rect key="frame" x="312.5" y="28.5" width="35.5" height="15"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="GXE-Th-z29" secondAttribute="bottom" constant="5" id="6fK-dh-wC0"/>
+                            <constraint firstItem="BM6-kn-VdB" firstAttribute="top" secondItem="tJB-r0-9GJ" secondAttribute="bottom" id="GYU-4B-OAN"/>
+                            <constraint firstItem="GXE-Th-z29" firstAttribute="leading" secondItem="PJk-0A-jPE" secondAttribute="leading" constant="10" id="Ki3-At-7N1"/>
+                            <constraint firstAttribute="trailing" secondItem="BM6-kn-VdB" secondAttribute="trailing" constant="10" id="QCh-uY-uU8"/>
+                            <constraint firstItem="BM6-kn-VdB" firstAttribute="centerY" secondItem="ZuY-Uz-8jj" secondAttribute="centerY" id="WCl-fg-N1j"/>
+                            <constraint firstItem="ZuY-Uz-8jj" firstAttribute="centerY" secondItem="GXE-Th-z29" secondAttribute="centerY" id="Wk2-BA-Im5"/>
+                            <constraint firstAttribute="bottom" secondItem="gdN-W4-aBh" secondAttribute="bottom" constant="3" id="c4A-r9-8Bm"/>
+                            <constraint firstItem="ZuY-Uz-8jj" firstAttribute="leading" secondItem="GXE-Th-z29" secondAttribute="trailing" constant="10" id="fOV-P4-k42"/>
+                            <constraint firstItem="tJB-r0-9GJ" firstAttribute="top" secondItem="PJk-0A-jPE" secondAttribute="top" id="hUu-xg-wUm"/>
+                            <constraint firstItem="gdN-W4-aBh" firstAttribute="leading" secondItem="GXE-Th-z29" secondAttribute="trailing" constant="10" id="jgM-qL-Xh9"/>
+                            <constraint firstAttribute="height" constant="66" id="l1k-6v-oh3"/>
+                            <constraint firstAttribute="trailing" secondItem="tJB-r0-9GJ" secondAttribute="trailing" constant="10" id="l79-8i-1cg"/>
+                            <constraint firstAttribute="trailing" secondItem="2dy-Is-S25" secondAttribute="trailing" constant="10" id="rba-9Q-UsT"/>
+                            <constraint firstAttribute="bottom" secondItem="2dy-Is-S25" secondAttribute="bottom" constant="2" id="vSB-2Q-BrR"/>
+                            <constraint firstItem="2dy-Is-S25" firstAttribute="top" secondItem="BM6-kn-VdB" secondAttribute="bottom" constant="1" id="ydJ-hb-ucL"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="PJk-0A-jPE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="KOm-Gk-fZ3"/>
+                    <constraint firstAttribute="trailing" secondItem="PJk-0A-jPE" secondAttribute="trailing" constant="4" id="SJd-tv-ywC"/>
+                    <constraint firstAttribute="bottom" secondItem="PJk-0A-jPE" secondAttribute="bottom" constant="4" id="ZcT-CD-6Ai"/>
+                    <constraint firstItem="PJk-0A-jPE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="4" id="hp6-BN-WH0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="amountLB" destination="2dy-Is-S25" id="Qeq-9t-9Ty"/>
+                <outlet property="dateLB" destination="tJB-r0-9GJ" id="qOe-LT-wDr"/>
+                <outlet property="iconImageView" destination="GXE-Th-z29" id="yZ8-Ac-hfS"/>
+                <outlet property="noteLB" destination="gdN-W4-aBh" id="GcL-GP-1oG"/>
+                <outlet property="titleLB" destination="ZuY-Uz-8jj" id="eBQ-R7-eHD"/>
+                <outlet property="walletLB" destination="BM6-kn-VdB" id="aNJ-T1-7SK"/>
+            </connections>
+            <point key="canvasLocation" x="162.31884057971016" y="55.245535714285715"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

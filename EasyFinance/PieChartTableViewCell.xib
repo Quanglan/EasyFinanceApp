@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PieChartTableViewCell" rowHeight="458" id="KGk-i7-Jjw" customClass="PieChartTableViewCell" customModule="EasyFinance" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="471" height="458"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="471" height="458"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hYB-l8-uUU">
+                        <rect key="frame" x="20" y="60" width="431" height="378"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a0b-Y1-pbB">
+                        <rect key="frame" x="135.5" y="10" width="200" height="40"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kA4-mc-wkF">
+                                <rect key="frame" x="160" y="0.0" width="40" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="6In-l4-Inh"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="chevron.right" catalog="system"/>
+                                <connections>
+                                    <action selector="tapNextMonth:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Z8P-fk-10g"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XYt-2o-6fb">
+                                <rect key="frame" x="45" y="11.5" width="110" height="17.5"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbQ-zc-8QW">
+                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="kmA-Ec-q4S"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="chevron.left" catalog="system"/>
+                                <connections>
+                                    <action selector="tapPreviousMonth:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="YVy-FL-sNc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="calendarColour"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="3lD-r7-cnc"/>
+                            <constraint firstItem="XYt-2o-6fb" firstAttribute="leading" secondItem="zbQ-zc-8QW" secondAttribute="trailing" constant="5" id="3ng-hz-Obh"/>
+                            <constraint firstItem="zbQ-zc-8QW" firstAttribute="top" secondItem="a0b-Y1-pbB" secondAttribute="top" id="50h-BP-Egl"/>
+                            <constraint firstAttribute="trailing" secondItem="kA4-mc-wkF" secondAttribute="trailing" id="6Qg-SL-CjC"/>
+                            <constraint firstItem="kA4-mc-wkF" firstAttribute="leading" secondItem="XYt-2o-6fb" secondAttribute="trailing" constant="5" id="F8z-b6-9HR"/>
+                            <constraint firstAttribute="width" constant="200" id="Hip-gA-MmV"/>
+                            <constraint firstItem="zbQ-zc-8QW" firstAttribute="leading" secondItem="a0b-Y1-pbB" secondAttribute="leading" id="Idr-Jw-mZt"/>
+                            <constraint firstItem="XYt-2o-6fb" firstAttribute="centerY" secondItem="a0b-Y1-pbB" secondAttribute="centerY" id="Lqz-LD-MtS"/>
+                            <constraint firstAttribute="bottom" secondItem="zbQ-zc-8QW" secondAttribute="bottom" id="NmY-e1-e9q"/>
+                            <constraint firstItem="kA4-mc-wkF" firstAttribute="top" secondItem="a0b-Y1-pbB" secondAttribute="top" id="Va8-cd-E9A"/>
+                            <constraint firstAttribute="bottom" secondItem="kA4-mc-wkF" secondAttribute="bottom" id="ftc-0W-ni7"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hYB-l8-uUU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="3hN-U8-0TX"/>
+                    <constraint firstItem="a0b-Y1-pbB" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="MkD-ML-fd8"/>
+                    <constraint firstAttribute="trailing" secondItem="hYB-l8-uUU" secondAttribute="trailing" constant="20" id="WLC-zb-Sjv"/>
+                    <constraint firstItem="a0b-Y1-pbB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Xdb-UY-mBR"/>
+                    <constraint firstItem="hYB-l8-uUU" firstAttribute="top" secondItem="a0b-Y1-pbB" secondAttribute="bottom" constant="10" id="c1O-ub-fJs"/>
+                    <constraint firstAttribute="bottom" secondItem="hYB-l8-uUU" secondAttribute="bottom" constant="20" id="nbr-gi-kzF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dateLB" destination="XYt-2o-6fb" id="4ft-n9-NJg"/>
+                <outlet property="dateView" destination="a0b-Y1-pbB" id="oZV-N2-eeb"/>
+                <outlet property="pieChartView" destination="hYB-l8-uUU" id="sxo-V0-aSM"/>
+            </connections>
+            <point key="canvasLocation" x="238.40579710144928" y="183.48214285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
+        <image name="chevron.right" catalog="system" width="96" height="128"/>
+        <namedColor name="calendarColour">
+            <color red="0.79364053940000001" green="0.93572987900000004" blue="0.74009071640000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

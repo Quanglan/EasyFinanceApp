@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TranCalendarViewController" customModule="EasyFinance" customModuleProvider="target">
+            <connections>
+                <outlet property="backView" destination="2vO-he-NzC" id="9X8-rt-l2O"/>
+                <outlet property="tableView" destination="yKA-gX-RIB" id="2wa-Fl-SbR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2vO-he-NzC">
+                    <rect key="frame" x="0.0" y="44" width="414" height="403"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="yKA-gX-RIB">
+                    <rect key="frame" x="0.0" y="447" width="414" height="415"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="yKA-gX-RIB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ADO-AM-hSM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yKA-gX-RIB" secondAttribute="trailing" id="GLH-PF-l0S"/>
+                <constraint firstItem="yKA-gX-RIB" firstAttribute="top" secondItem="2vO-he-NzC" secondAttribute="bottom" id="Ill-WP-QeB"/>
+                <constraint firstItem="2vO-he-NzC" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Ir6-t1-rFz"/>
+                <constraint firstItem="2vO-he-NzC" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ObX-IC-q7r"/>
+                <constraint firstItem="2vO-he-NzC" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="1:1" id="R4S-Pp-bS3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="yKA-gX-RIB" secondAttribute="bottom" id="fG5-Lr-dlA"/>
+                <constraint firstItem="2vO-he-NzC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="nDh-XH-jhR"/>
+                <constraint firstItem="2vO-he-NzC" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="vnR-L8-WL6"/>
+                <constraint firstItem="2vO-he-NzC" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.45" id="xj3-7k-LyW"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="45.535714285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

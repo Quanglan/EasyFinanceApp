@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableHeaderCell" rowHeight="49" id="KGk-i7-Jjw" customClass="TableHeaderCell" customModule="EasyFinance" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="352" height="49"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="352" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pvj-9S-Oie">
+                        <rect key="frame" x="0.0" y="0.0" width="352" height="40"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JfC-VX-lfg">
+                                <rect key="frame" x="15" y="0.0" width="44" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="T0O-9e-D29"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o7w-PZ-dl3">
+                                <rect key="frame" x="266" y="0.0" width="71" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="JTE-WC-TnW"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Chi tiết"/>
+                                <connections>
+                                    <action selector="showDetailPress:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="kZX-QC-a8d"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JfC-VX-lfg" firstAttribute="leading" secondItem="pvj-9S-Oie" secondAttribute="leading" constant="15" id="ASs-h7-Qn5"/>
+                            <constraint firstAttribute="height" constant="40" id="Gfi-uR-qap"/>
+                            <constraint firstItem="o7w-PZ-dl3" firstAttribute="centerY" secondItem="JfC-VX-lfg" secondAttribute="centerY" id="nYG-os-Fhd"/>
+                            <constraint firstItem="JfC-VX-lfg" firstAttribute="top" secondItem="pvj-9S-Oie" secondAttribute="top" id="qbr-kz-1TM"/>
+                            <constraint firstAttribute="trailing" secondItem="o7w-PZ-dl3" secondAttribute="trailing" constant="15" id="zuM-XP-GNu"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="pvj-9S-Oie" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="2oR-X6-jh4"/>
+                    <constraint firstItem="pvj-9S-Oie" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="7xc-MF-HJb"/>
+                    <constraint firstAttribute="trailing" secondItem="pvj-9S-Oie" secondAttribute="trailing" id="EhQ-lW-HjP"/>
+                    <constraint firstAttribute="bottom" secondItem="pvj-9S-Oie" secondAttribute="bottom" id="Tnn-1X-E9E"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="backView" destination="pvj-9S-Oie" id="2oZ-1B-FW7"/>
+                <outlet property="mytextLabel" destination="JfC-VX-lfg" id="9Ms-0u-cDW"/>
+                <outlet property="showDetailButton" destination="o7w-PZ-dl3" id="FVg-VQ-urA"/>
+            </connections>
+            <point key="canvasLocation" x="155.07246376811597" y="75.334821428571431"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
