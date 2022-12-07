@@ -154,6 +154,7 @@
 		B82C5D6A29403B5D005EE6C1 /* SystemVariable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemVariable.swift; sourceTree = "<group>"; };
 		B82C5D6C294085DA005EE6C1 /* PieChartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartTableViewCell.swift; sourceTree = "<group>"; };
 		B82C5D6D294085DA005EE6C1 /* PieChartTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PieChartTableViewCell.xib; sourceTree = "<group>"; };
+		B82C5D702940B741005EE6C1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B83BB44B291FDEC7006E10C6 /* EasyFinance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyFinance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B83BB44E291FDEC7006E10C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B83BB450291FDEC7006E10C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -352,6 +353,7 @@
 				B83BB47E291FE0A6006E10C6 /* GoogleService-Info.plist */,
 				B83BB459291FDEC9006E10C6 /* LaunchScreen.storyboard */,
 				B83BB45C291FDEC9006E10C6 /* Info.plist */,
+				B82C5D702940B741005EE6C1 /* README.md */,
 			);
 			path = EasyFinance;
 			sourceTree = "<group>";
